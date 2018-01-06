@@ -7,7 +7,7 @@ class GenresController < ApplicationController
 
   get '/genres/:slug' do
     @genre = genre.find_by_slug(params[:slug])
-    erb :'genre/show'
+    erb :'genres/show'
   end
 
 end

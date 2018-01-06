@@ -12,7 +12,7 @@ class SongsController < ApplicationController
 
   get 'songs/:slug' do
     @song = Song.find_by_slug(params[:slug])
-    erb :'songs/show'
+    erb :'/songs/show'
   end
 
   post '/songs' do
@@ -26,6 +26,7 @@ class SongsController < ApplicationController
 
   get '/songs/:slug/edit' do
     @song = Song.find_by_slug(params[:slug])
+    erb :'/songs/edit'
   end
 
   patch '/songs/:slug' do

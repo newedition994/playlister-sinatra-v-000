@@ -3,7 +3,7 @@ class SongsController < ApplicationController
   use Rack::Flash
   get '/songs' do
     @songs = Song.all
-    erb :'/songs/index'
+    erb :'songs/index'
   end
 
   get '/songs/new' do

@@ -8,7 +8,7 @@
   <input type="text" name="Artist Name"><br>
 
   <% Genre.all.each do |genre| %>
-     <label><%= genre.name %></label> </br>
+     <label><%= genre.name %></label> <br>
      <input id="<%= genre.name %>" type="checkbox" name="genres[]" value="<%= genre.id %>">
-   <% end %> </br>
+   <% end %> <br>
 </form>
